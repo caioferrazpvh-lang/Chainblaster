@@ -165,7 +165,7 @@ int main(int argc, char **argv){
 	float spawnTimer = 0;
 	float spawnInterval = 0.1;
 	float scaler = 0;			//Multiplicador escalar da funcao seno do press enter na tela inicial.
-	float barFiller = 300;		//Multiplicador que carrega a barra de ataque.
+	float barFiller = 100;		//Multiplicador que carrega a barra de ataque.
 	float barFillerTimer = 0;
 	float gameOverTimer = 0;
 
@@ -364,7 +364,7 @@ int main(int argc, char **argv){
 
 							enemies[j].chainActive = 2;
 							enemies[j].chainDelay = CHAIN_DELAY;
-							barFiller += 20;
+							barFiller += 10;
 							if(barFiller > 300) {
 								barFiller = 300;
 							}
@@ -540,7 +540,7 @@ int main(int argc, char **argv){
 					spawnTimer = 0;
 					gameOverTimer = 0;
 					levaAcabou = 1;
-					barFiller = 300;
+					barFiller = 100;
 					deathCount = 0;
 					frame = 0;
 					enemyCount = 0;
