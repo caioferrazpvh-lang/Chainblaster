@@ -18,7 +18,7 @@ int chainEffect(Enemy chain, Enemy checked) {
     float distX = chain.chainX - checked.ship.x;
     float distY = chain.chainY - checked.ship.y;
     float totalDist = distX * distX + distY * distY;
-    float minDist = chain.chainRadius + checked.raio;
+    float minDist = chain.chainRadius * chain.chainScaler + checked.raio;
     return(totalDist <= minDist * minDist);
 }
 void killEnemy(Enemy *e, Hero *h, int* enemyCount, EnemySprites s, Audio *a) {

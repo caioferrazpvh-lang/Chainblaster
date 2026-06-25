@@ -192,7 +192,9 @@ void expireTiroPW(TiroPW* t, Hero* h) {
 				t->active = 0;
 				t->timeSinceActivated = 0;
 				t->timer = 0;
-				h->ship.tiro.modo = TIRO_INATIVO;
+				//h->ship.tiro.modo = TIRO_INATIVO;
+				//h->ship.tiro.timer = 0;
+				initTiro(&h->ship);
 		}
 	}
 }

@@ -160,7 +160,7 @@ void updateEnemy(Enemy *e, Hero *h, int* enemyCount, EnemySprites s, Audio *a) {
 	}
 	else if(e->chainActive == 1) {
 
-		e->chainScaler += 8 / FPS;
+		e->chainScaler += 6 / FPS;
 		if(e->chainScaler > 1) {
 			e->chainScaler = 1;
 		}
